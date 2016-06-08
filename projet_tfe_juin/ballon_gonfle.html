@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="fr">
+
+<head>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>The Charlie Show</title>
+<!--Adobe Edge Runtime-->
+
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+     <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+
+     <style type="text/css">
+     /* ne se charge pas quand c'est dans le css */
+     #container_gonfle_ballon {background: red;
+                          position: absolute;
+                          top:0;
+                          left: 0;
+                          background:url('assets/img/fond_ballon.svg') no-repeat ;}
+
+
+    .ballon {text-indent: -99999px;
+             width: 40px;
+             height: 40px;
+             position: relative;
+             top:500px;
+             left: 500px; 
+             cursor: pointer;}
+    a#lienavant_choixdecoler:before { content: '';
+                                 background:url('../img/cursor.svg') no-repeat ;
+                                  width: 50px;
+                                  background-size: cover;
+                                  height: 50px;
+                                  top:-20px;
+                                  position: absolute;
+                                  left: -60px;}
+    a#lienavant_choixdecoler{color: red;
+                         position: absolute;
+                        top:720px;
+                        color:#FFF3DD;
+                        font-size: 24px;
+                        font-family: 'Alice', serif;
+                       left: 580px;
+                        opacity: 0;
+                            -webkit-animation: animation-lien 3s infinite
+                       -moz-animation: animation-lien 3s infinite;
+                       -o-animation: animation-lien 3s infinite;
+                       animation: animation-lien 3s infinite;
+                       animation-delay : 10s;
+                       }
+
+@-webkit-keyframes animation-lien {
+  0% { top:730px; opacity: 0;}
+  50% { top:720px; opacity: 1;}
+   100% { top:730px; opacity: 1;} 
+}}
+
+
+     </style>
+
+</head>		
+
+<body>
+
+<div id="container_gonfle_ballon" class="container">
+
+ 
+  <div id="ballon4" class="ballon">ballon</div>
+  <div id="ballon5" class="ballon">ballon</div>
+  <div id="ballon6" class="ballon">ballon</div>
+
+ 
+
+ <div id="content_drag">
+  <div class="box dragger1">Drag 1</div>
+  <div class="box dragger2">Drag 2</div>
+  <div class="box dragger3">Drag 2</div>
+  <div class="box dragger4">Drag 2</div>
+  <div class="box dragger5">Drag 2</div>
+  <div class="box dragger6">Drag 2</div>
+  
+    <div id="target1" class="target">Target 1</div>
+
+  
+</div> <!-- content_drag -->
+
+
+
+  
+      <a href="lahaut.html" id="lienavant_choixdecoler"> Allez ! Assez de ballons ! Décolons ! </a>
+
+
+
+</div><!--  container_chercher_bimo -->
+
+
+<script src='assets/js/jquery-1.11.3.min.js'></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/Draggable.min.js"></script>
+<script src="assets/js/drag.js"></script> 
+
+</body>
+</html>
+

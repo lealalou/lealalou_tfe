@@ -1,0 +1,219 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+body {
+font-family: Lato;
+-webkit-font-smoothing: antialiased;
+margin: 0;
+
+}
+
+/* phone */
+#phone_nav {
+  z-index: 1000000;
+width: 350px;
+height: 540px;
+border-radius: 30px;
+position: absolute;
+left: 45%;
+top: -200px;
+background:#FCC447;
+transform: scale(0.2, 0.2) translate(0, 0);
+transfor-origin: top left;
+}
+
+
+.grossissement {
+animation:  anim_phone 1s ease-in-out infinite;
+-webkit-animation:  anim_phone 1s ease-in-out infinite;
+-o-animation:  anim_phone 1s ease-in-out infinite;
+-moz-animation:  anim_phone 1s ease-in-out infinite;
+-ms-animation:  anim_phone 1s ease-in-out infinite;
+-webkit-animation-iteration-count: 1;
+            -o-animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+            -ms-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            -webkit-animation-fill-mode:both;
+            -o-animation-fill-mode:both;
+            -moz-animation-fill-mode:both;
+            -ms-animation-fill-mode:both;
+            animation-fill-mode:both;}
+
+@keyframes anim_phone {
+  from {
+  
+    transform: scale(0.2, 0.2) translate(0, 0);
+  }
+  to {
+    transform: scale(1.2, 1.2) translate(-350px, 250px)
+  }
+}
+
+
+
+#box_nav {width: 1024px;
+      height: 768px;
+      opacity: 0;}
+
+
+#screen_nav {
+width: 290px;
+height: 290px;
+
+position: absolute;
+left: 50%;
+top: 300px;
+margin: -260px -145px;
+box-sizing: border-box;
+overflow: hidden;
+
+}
+
+.pages_nav {
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+-webkit-transition: opacity .2s linear;
+transition: opacity .2s linear;
+z-index: 29;
+position: absolute;
+width: 340px;
+overflow-y: auto;
+overflow-x: hidden;
+height: 100%;
+}
+.pages_nav.hide {
+-webkit-transition: opacity .1s linear;
+transition: opacity .1s linear;
+opacity: 0;
+}
+
+.page_nav {
+background: #FFF3DE;
+height: auto;
+display: block;
+padding-bottom: 50px;
+width: 290px;
+}
+
+#place {width: 100px; height: 50px;
+position: relative; top:90px;}
+
+
+#chat{
+cursor: pointer;
+height: 300px;
+}
+
+#menu {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.back2 a {
+text-align: center;
+height: 50px;
+position: relative;
+width: 100%;
+line-height: 50px;
+font-size: 20px;
+background: #FFF3DE;
+color: #F4A019;
+display: block;
+border: 1px solid #F9E2C5;
+text-decoration: none;
+}
+
+
+.back2 a:hover,
+ {
+background:#F4A019;
+color: #FFF3DE;
+}
+#dvdbleu:hover {
+background:url('dvdbleu.svg') no-repeat ;
+background-color: #F4A019;
+color: white;
+background-position: 20px 50%;}
+
+#dvdbleu {background:url('dvdbleu.svg') no-repeat ;
+      background-position: 20px 50%;}
+
+#dvdrouge:hover {
+background:url('dvdrouge.svg') no-repeat ;
+background-color: #F4A019;
+color: white;
+background-position: 20px 50%;}
+
+#dvdrouge {background:url('dvdrouge.svg') no-repeat ;
+      background-position: 20px 50%;}
+
+
+.back2 a:after {
+content: '>';
+position: absolute;
+right: 25px;
+}
+
+.retour a:after {
+content: '<';
+position: absolute;
+left: -200px;
+}
+
+a.clair {color: #FFD99C;} 
+.fleche_menu {margin-left: 50px;}
+
+.cache_screen {height: 180px;}
+
+#oeil_droit_bimo {
+position: relative;
+top:100px;
+left: 30px;
+animation: vol 6s ease-in-out infinite;
+-webkit-animation: vol 6s ease-in-out infinite;
+-o-animation: vol 6s ease-in-out infinite;
+-moz-animation: vol 6s ease-in-out infinite;
+-ms-animation: vol 6s ease-in-out infinite;
+}
+
+#oeil_gauche_bimo {
+
+position: relative;
+top:50px;
+left: 230px;
+animation: vol 6s ease-in-out infinite;
+-webkit-animation: vol 6s ease-in-out infinite;
+-o-animation: vol 6s ease-in-out infinite;
+-moz-animation: vol 6s ease-in-out infinite;
+-ms-animation: vol 6s ease-in-out infinite;
+}
+
+#bouche_bimo {
+
+position: relative;
+top:40px;
+left: 95px;
+animation: vol 6s ease-in-out infinite;
+-webkit-animation: vol 6s ease-in-out infinite;
+-o-animation: vol 6s ease-in-out infinite;
+-moz-animation: vol 6s ease-in-out infinite;
+-ms-animation: vol 6s ease-in-out infinite;
+}
+
+@keyframes vol{
+0%  { transform:  translate(0px, 0px);} 
+
+20% { transform:  translate(10px,0px);}
+
+40%{ transform:  translate(0px,0px);}
+
+80%{ transform:  translate(0px,10px);}
+
+100%{ transform:  translate(0px,0px);}
+
+}
+
+
+
+
+

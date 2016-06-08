@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang="fr">
+
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Bienvenue</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style_filmo.css">
+</head>
+
+
+<body>
+
+<div id="container"></div>
+
+<div id="box_nav"> 
+</div> <!-- box_nav -->
+	<div id="phone_nav">
+		<div id="screen_nav">
+
+			<div class="pages_nav">
+
+				<div class="page_nav">
+					<div id="chat">
+
+						<div id="oeil_droit_bimo">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="45px" height="45px" viewBox="0 0 45 45" enable-background="new 0 0 45 45" xml:space="preserve">
+							<path fill="#F4A019" d="M36.25,17.625c0,9.738-7.895,17.631-17.627,17.631c-9.737,0-17.625-7.894-17.625-17.631
+							C0.998,7.887,8.884,0,18.623,0C28.355,0,36.25,7.887,36.25,17.625z"/>
+							<path fill="#FCC447" d="M32.538,19.482c0,3.846-3.323,6.959-7.421,6.959c-4.103,0-7.429-3.113-7.429-6.959
+							c0-3.843,3.326-6.958,7.429-6.958C29.215,12.525,32.538,15.639,32.538,19.482z"/>
+						</svg></div>
+						<div id="oeil_gauche_bimo">
+
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="45px" height="45px" viewBox="0 0 45 45" enable-background="new 0 0 45 45" xml:space="preserve">
+							<path fill="#F4A019" d="M35.698,17.919c0,9.739-7.892,17.631-17.628,17.631c-9.731,0-17.625-7.894-17.625-17.631
+							c0-9.737,7.893-17.627,17.625-17.627C27.808,0.292,35.698,8.184,35.698,17.919z"/>
+							<path fill="#FCC447" d="M21.781,17.927c0,3.842-3.32,6.953-7.419,6.953c-4.101,0-7.427-3.111-7.427-6.953
+							c0-3.846,3.326-6.96,7.427-6.96C18.461,10.967,21.781,14.081,21.781,17.927z"/>
+						</svg></div>
+						<div id="bouche_bimo">
+
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="109.167px" height="45px" viewBox="0 0 109.167 45" enable-background="new 0 0 109.167 45" xml:space="preserve">
+							<path fill="none" stroke="#F9A715" stroke-width="7.8358" stroke-miterlimit="10" d="M4.449,7.021c0,0,48.325,41.708,100.564-1.389"
+							/>
+						</svg></div>
+
+						<div id="place"> </div>
+
+					</div>
+					<nav>
+
+						<ul id="menu">
+
+							<li class="back2"><a href="filmodex/film.html">Films capturés</a></li>
+							<li class="back2"><a href="filmodex/sauvegarde.html">Sauvegarde</a></li>
+							<li class="back2"><a href="filmodex/adresse.html">Adresses</a></li>
+
+						</ul>
+
+					</nav>
+				</div>
+			</div> <!-- pages -->
+
+		</div> <!-- screen -->
+	</div> <!-- phone -->
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+
+		$("#phone_nav").click(function() {
+			$('#phone_nav').addClass('grossissement');
+		});
+
+		$("#box_nav").click(function() {
+			$('#phone_nav').removeClass('grossissement');
+
+		});
+
+
+
+
+		var $menu = $('#menu').html();
+
+		var audio1;
+		audio1 = new Audio(); 
+		audio1.src ="assets/media/ouch.mp3";;
+		audio1.pause(); 
+		audio1.volume=0.2;
+
+
+
+
+		$('#chat').click(function(){
+			if(audio1.paused) {
+				audio1.play();
+			}
+		});
+
+
+		$("#button").click(function() {
+			$('.transform').toggleClass('transform-active');
+		});
+
+		$('#menu').on('click', 'a', function(event) {
+			
+			event.preventDefault();
+
+			link = $(event.target).attr('href');
+
+			if (link == "") return false;
+			if (link == "#retour") $('#menu').html($menu);
+			
+
+			else $.get( link, function( data ) {
+			  $( "#menu" ).html( data );
+			});
+		})
+
+	</script>
+
+</body>
+</html>
+

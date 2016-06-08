@@ -1,0 +1,110 @@
+
+{
+
+	"HTMLFileName":"ecran_accueil.html",
+	"pref__general__AutoKeyframeProperties":"true",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Niveau inférieur\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"stage-Default Timeline_playhead_ms":"15579",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"expanded:images/fond_espace3.png":"nil",
+	"stage-Default Timeline_mark_ms":"-1",
+	"viewStartMs":"11389.802382474",
+	"mediagroup_media/Chris_Zabriskie_-_09_-_Cylinder_Nine.mp3":"Chris_Zabriskie_-_09_-_Cylinder_Nine",
+	"StageZoomFactor":"50",
+	"symbol_stage":{
+		"element_${Text}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"false",
+			"timelineColor":"0x00bda4"},
+		"dummyStageParentWidth":"1024px",
+		"dummyStageParentHeight":"768px",
+		"element_${Chris_Zabriskie_-_09_-_Cylinder_Nine}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"animationEnabled":"false",
+			"timelineColor":"0x2f73ad"},
+		"vGuides":"515px",
+		"element_${Chris_Zabriskie_-_09_-_Cylinder_Nine2}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"animationEnabled":"false",
+			"timelineColor":"0x008dc8"},
+		"element_${Group}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"timelineColor":"0x00a096"},
+		"element_${bucheron}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"true",
+			"timelineColor":"0x50bd82"},
+		"element_${fond_espace3}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"element_${potato_cercle}":{
+			"timelineColor2":"0xba5b89",
+			"timelineColor3":"0x734a5f",
+			"animationEnabled":"true",
+			"timelineColor":"0xdb619d"},
+		"defaultStageParentWidth":"1024px",
+		"element_${Text2}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"true",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentHeight":"768px",
+		"element_${potatoe_titre}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"animationEnabled":"true",
+			"timelineColor":"0xfb657a"},
+		"element_${Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"element_${Rectangle}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
+			"timelineColor":"0x63599f",
+			"animationEnabled":"true",
+			"invisible":"false"},
+		"hGuides":"",
+		"element_${potato_tete}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"animationEnabled":"true",
+			"timelineColor":"0xffd46d"},
+		"element_${logo-dwm}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"animationEnabled":"true",
+			"timelineColor":"0xceaef4"}},
+	"TransitionIdCounter":"752",
+	"CompZoomFactor":"100",
+	"viewStartY":"0",
+	"pixelsPerMs":"0.11132629837598",
+	"usedBOM":"false",
+	"expanded:images/potato_cercle.svg":"nil",
+	"expanded:images/logo-dwm.png":"nil",
+	"nextElementColorIndex":"2",
+	"pref__general__GenerateSmoothTransitions":"false",
+	"expanded:images/potato_tete.svg":"nil",
+	"expanded:images/bucheron.png":"nil",
+	"expanded:images/potatoe_titre.svg":"nil"}

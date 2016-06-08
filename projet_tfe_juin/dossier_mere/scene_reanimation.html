@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>TFE Léa Lalou</title>
+<!--Adobe Edge Runtime-->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+<script>
+   AdobeEdge.loadComposition('scene_reanimation', 'EDGE-9827876', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "1024px",
+    height: "768px"
+}, {dom: [ ]}, {dom: [ ]});
+</script>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body style="margin:0;padding:0;">
+
+
+    <div  id="container3">
+
+         <div id="bimo_haut">
+
+            <div class="touchesiphone2"> 
+                <a href="index.html" class="lien_toucheiphone2"></a>
+            </div>
+
+        </div>  
+
+
+    </div>  
+
+    <div  id="container2">
+
+        <div id="bimo_face">
+            
+            <div class="touchesiphone">
+    
+              <span id="touche_plus"> + </span>
+              <span id="touche_moin"> - </span>
+
+            </div> 
+
+        </div> 
+        <button id="suisjebete">Suis-je bête ! Testons en haut</button>
+    
+    </div> 
+    <div id="container">
+
+    	<div id="Stage" class="EDGE-9827876"></div>
+        <p id="paroucommencer"> Par où commencer pour réveiller ce petit truc ? </p>
+        <button id="parlehaut" class="choix1">Par le haut</button>
+        <button id="parlagauche" class="choix1">Sur le coté</button>
+
+    </div>
+
+
+
+<script src='assets/js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript">
+
+$("#parlagauche").click(function () {
+    $("#container2").addClass("show");
+ });  
+
+$("#parlehaut").click(function () {
+    $("#container3").addClass("show");
+ });  
+
+$("#touche_plus").click(function () {
+    $("#container3").removesClass("show");
+ }); 
+
+var  audiomi, audiofa;
+
+audiomi = new Audio();
+audiofa = new Audio();
+
+audiomi.src ="assets/media/mi.mp3";
+audiofa.src ="assets/media/fa.mp3"
+audiomi.pause();
+audiofa.pause(
+
+  
+
+    $('#touche_plus').click(function(){
+        if(audiomi.paused) {
+          audiomi.play();
+        }
+
+      });
+
+    $('#touche_moin').click(function(){
+        if(audiofa.paused) {
+          audiofa.play();
+        }
+      });
+
+
+</script>
+</body>
+</html>

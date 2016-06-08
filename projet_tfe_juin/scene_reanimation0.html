@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Untitled</title>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+       <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <style>
+        .edgeLoad-EDGE-9827876 { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('scene_reanimation0', 'EDGE-9827876', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "1024px",
+    height: "768px"
+}, {dom: [ ]}, {dom: [ ]});
+</script>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body style="margin:0;padding:0;">
+
+
+    <div  id="container3">
+
+         <div id="bimo_haut">
+
+            <div class="touchesiphone2"> <a  class="lien_page" href="scene_reanimation2.html"></a> </div>
+
+        </div>  
+
+
+    </div>  
+
+    <div  id="container2">
+
+        <div id="bimo_face">
+            
+            <div class="touchesiphone">
+    
+              <span id="touche_plus"> + </span>
+              <span id="touche_moin"> - </span>
+              <button id="retesthaut"> Essayer par le haut</button>
+
+            </div>
+
+
+        </div> 
+    </div> 
+    <div id="container">
+
+    	<div id="Stage" class="EDGE-9827876"></div>
+        <button id="parlehaut" class="choix1">Par le haut</button>
+        <button id="parlagauche" class="choix1">Sur le coté</button>
+
+    </div>
+
+
+
+<script src='assets/js/jquery-1.11.3.min.js'></script>
+<script type="text/javascript">
+
+$("#retesthaut").click(function () {
+    $("#container3").addClass("show");
+    $("#container2").removeClass("show");
+ });  
+
+
+$("#parlagauche").click(function () {
+    $("#container2").addClass("show");
+ });  
+
+$("#parlehaut").click(function () {
+    $("#container3").addClass("show");
+ });  
+
+
+
+
+
+    var  audiomi, audiofa;
+
+    audiomi = new Audio();
+    audiofa = new Audio();
+
+    audiomi.src ="assets/media/beep56.mp3";
+    audiofa.src ="assets/media/beep55.mp3";
+ 
+    audiomi.pause();
+    audiofa.pause();
+
+
+    $('#touche_plus').click(function(){
+        if(audiomi.paused) {
+          audiomi.play();
+        }
+      });
+
+    $('#touche_moin').click(function(){
+        if(audiofa.paused) {
+          audiofa.play();
+        }
+      });
+
+
+</script>
+</body>
+</html>
